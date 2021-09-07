@@ -4,13 +4,11 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:react/recommended",
     "plugin:import/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "prettier",
-    "plugin:@next/next/recommended"
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -23,12 +21,7 @@
     "SharedArrayBuffer": "readonly",
     "JSX": "readonly"
   },
-  "plugins": [
-    "eslint-plugin-import",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
-    "@typescript-eslint/eslint-plugin"
-  ],
+  "plugins": ["eslint-plugin-import", "@typescript-eslint/eslint-plugin"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module"
@@ -37,11 +30,7 @@
     "no-alert": "error",
     "no-console": "warn",
     "prefer-const": "error",
-    "default-case": "warn",
-    "react/prop-types": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/react-in-jsx-scope": "off"
+    "default-case": "warn"
   },
   "overrides": [
     {
@@ -53,9 +42,6 @@
     }
   ],
   "settings": {
-    "react": {
-      "version": "detect"
-    },
     "import/resolver": {
       "node": {
         "paths": ["."],
